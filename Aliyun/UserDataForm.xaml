@@ -1,0 +1,50 @@
+﻿<Window x:Class="Aliyun.UserDataForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aliyun"
+        mc:Ignorable="d"
+        Title="UserDataForm" Height="400" Width="400" Closing="Window_Closing">
+    <Grid>
+        <StackPanel Margin="10,10,10,0" Orientation="Vertical">
+            <Canvas Height="30">
+                <Label Width="150" Content="Access Key Id"></Label>
+                <TextBox x:Name="AccessKeyIdInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Secret"></Label>
+                <TextBox x:Name="SecretInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Security Group Id"></Label>
+                <TextBox x:Name="SecurityGroupIdInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Default Password"></Label>
+                <TextBox x:Name="DefaultPasswordInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Default Host Name"></Label>
+                <TextBox x:Name="DefaultHostNameInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Image Type 0 Id"></Label>
+                <TextBox x:Name="ImageType0IdInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Image Type 0 Name"></Label>
+                <TextBox x:Name="ImageType0NameInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Image Type 1 Id"></Label>
+                <TextBox x:Name="ImageType1IdInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Canvas Height="30">
+                <Label Width="150" Content="Image Type 1 Name"></Label>
+                <TextBox x:Name="ImageType1NameInput" Margin="170,0,0,0" Height="25" Width="200" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"></TextBox>
+            </Canvas>
+            <Button Width="50" Height="30" Content="Confirm" Click="ReportUserData"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

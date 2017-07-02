@@ -1,0 +1,30 @@
+﻿<Window x:Class="Aliyun.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aliyun"
+        mc:Ignorable="d"
+        Title="ECS API" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="10,0,10,0" Height="40" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button  Margin="5,0,5,0"  Width="100" Height="25" VerticalAlignment="Center" Content="Get Instance List" Click="GetInstanceList"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Create Instance" Click="CreateInstance"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Delete Instance" Click="DeleteInstance"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Allocate IP" Click="AllocateIP"></Button>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,0" Height="40" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button  Margin="5,0,5,0"  Width="100" Height="25" VerticalAlignment="Center" Content="Start Instance" Click="StartInstance"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Stop Instance" Click="StopInstance"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Reboot Instance" Click="RebootInstance"></Button>
+                <Button Margin="5,0,5,0" Width="100" Height="25" VerticalAlignment="Center" Content="Modify Password" Click="ModifyPassword"></Button>
+            </StackPanel>
+            <ScrollViewer Margin="0,20,0,0">
+                <StackPanel x:Name="InstanceList" Margin="10,0,10,0" Height="100" VerticalAlignment="Top" Orientation="Vertical" >
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        
+    </Grid>
+</Window>

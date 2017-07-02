@@ -1,0 +1,19 @@
+﻿<Window x:Class="Aliyun.SpecifyInstanceType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aliyun"
+        mc:Ignorable="d"
+        Title="SpecifyInstanceType" Height="200" Width="300">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+        <StackPanel Height="50" VerticalAlignment="Top" Margin="10,10,10,0">
+        <RadioButton x:Name="ImageType0"  IsChecked="True"></RadioButton>
+        <RadioButton x:Name="ImageType1" ></RadioButton>
+            </StackPanel>
+            
+            <Button Width="50" Height="25" Content="Confirm" Click="ReportSelection"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
